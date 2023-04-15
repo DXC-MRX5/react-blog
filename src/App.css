@@ -50,6 +50,9 @@
     padding-bottom: 30px;
     border-bottom: 3px solid #05386B;
 }
+.mobileNav{
+    display: none;
+}
 .abc{
     text-decoration: none;
     color: #063f12;
@@ -71,7 +74,9 @@
 .Home-cntnr{
     width: 100%;
     display: flex;
+    flex-direction: row;
     justify-content: space-evenly;
+    border: 1px solid red;
 }
 .adBox{
     display: flex;
@@ -108,6 +113,7 @@
     width: 100%;
     position: absolute;
     display: flex;
+    flex-direction: row;
     justify-content: space-evenly;
     animation: leftswipe 1s ease;
 }
@@ -122,6 +128,7 @@
 .after{
         width: 100%;
     display: flex;
+    flex-direction: row;
     justify-content: space-evenly;
     position: absolute;
     animation: rightswipe 1s ease;
@@ -224,22 +231,27 @@
 }
 .Bollywood{
     display: flex;
+    flex-direction: row;
     justify-content: space-around;
 }
 .Hollywood{
     display: flex;
+    flex-direction: row;
     justify-content: space-around;
 }
 .Food{
     display: flex;
+    flex-direction: row;
     justify-content: space-around;
 }
 .Fitness{
     display: flex;
+    flex-direction: row;
     justify-content: space-around;
 }
 .Tech{
     display: flex;
+    flex-direction: row;
     justify-content: space-around;
 }
 .catagory-leftPart{
@@ -256,7 +268,7 @@
     border-bottom: 3px solid #05386B;
 }
 .catagory-element{
-    margin: 3em;
+    margin: 5vw;
     display: flex;
     align-items: center;
     gap: 3vw;
@@ -271,7 +283,7 @@
     }
 }
 .catagory-element-new{
-    margin: 3em;
+    margin: 5vw;
     display: flex;
     align-items: center;
     gap: 3vw;
@@ -343,4 +355,202 @@
     font-family: 'Raleway', sans-serif;
     color: #05386B;
     border-bottom: 3px solid #05386B;
+}
+
+@media only screen and (max-width:850px) {
+    .header-cntnr {
+        width: 100%;
+        height: fit-content;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        margin-bottom: 30px;
+    }
+    .links{
+        display: none;
+    }
+    .moblinks{
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        font-family: 'Ubuntu', sans-serif;
+        font-size: 20px;
+        font-weight: bold;
+        padding-bottom: 30px;
+        border-bottom: 3px solid #05386B;
+    }
+    .mobileNav{
+        width: 100%;
+        display: inline-block;
+    }
+    .downon{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+    .downoff{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+    .btn{
+        border: none;
+        background-color: inherit;
+        cursor: pointer;
+        margin: 40px;
+    }
+    .mnbtn{
+        animation: rotation 1s ease;
+    }
+    @keyframes rotation {
+        0%{
+            transform: rotateZ(180deg);
+        }
+        100%{
+            transform: rotateZ(0deg);
+        }
+    }
+    .clsbtn{
+        animation: antirotation 1s ease;
+    }
+    @keyframes antirotation {
+        0%{
+            transform: rotateZ(-180deg);
+        }
+        100%{
+            transform: rotateZ(0deg);
+        }
+    }
+    .before{
+        width: 100%;
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        margin-bottom: 300px;
+        animation: leftswipe 1s ease;
+    }
+    @keyframes leftswipe{
+        0%{
+            transform: translateX(-100%);
+        }
+        100%{
+            transform: translateX(0%);
+        }
+    }
+    .after{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        position: absolute;
+        margin-bottom: 300px;
+        animation: rightswipe 1s ease;
+    }
+    @keyframes rightswipe {
+        0%{
+            transform: translateX(100%);
+        }
+        100%{
+            transform: translateX(0%);
+        }
+    }
+    .Home-cntnr{
+        margin-top: 500px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    .btndiv{
+        position: relative;
+        bottom: -53vh;
+        right: -40vw;
+    }
+    .catagory-poster{
+        width: 150px;
+        height: 80px;
+        box-shadow: 5px 10px 8px #05386B;
+    }
+    .latest-element{
+        margin-top: 20px;
+        margin-left: 10%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width:80%;
+        text-align: center;
+    }
+    .latest-poster{
+        width: 50%;
+        height: 35%;
+        box-shadow: 5px 5px 10px #05386B;
+    }
+    .adBox{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 90%;
+        height: 60vh;
+        border: 2px solid #05386B;
+    }
+    .topBox{
+        width: 90%;
+        margin-top: 30px;
+        margin-left: 5%;
+        display: flex;
+        gap: 20px;
+    }
+    .topBox h2{
+        font-size: 70px;
+        font-family:  'Ubuntu', sans-serif;
+        color: rgb(222, 224, 210);
+    }
+    .top-poster{
+        width: 130px;
+        height: 90px;
+        border: 2px solid #05386B;
+        box-shadow: 3px 8px 3px #063f12;
+    }
+    .topTopic{
+        font-family:  'Ubuntu', sans-serif;
+        color: #05386B;
+    }
+    .Bollywood{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    .Hollywood{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    .Food{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    .Fitness{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    .Tech{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    .catagory-btndiv{
+        position: relative;
+        left: 60%;
+    }
+    .cntxtdata-cntnr{
+        width: 100%;
+        border: 1px solid red;
+    }
 }
