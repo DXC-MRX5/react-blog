@@ -470,8 +470,7 @@
     }
     .btndiv{
         position: relative;
-        bottom: -53vh;
-        right: -40vw;
+        top:450px;
     }
     .catagory-poster{
         width: 150px;
@@ -556,8 +555,8 @@
         color: #05386B;
     }
     .catagory-btndiv{
-        position: relative;
-        left: 60%;
+        position: absolute;
+        left: 20vw;
     }
     .cntxtdata-cntnr{
         width: 100%;
