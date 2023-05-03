@@ -24,6 +24,7 @@ const Home = () => {
       </div>
       </div>
       <div className="latest-cntnr">
+      <h1>Latest Stories</h1>
       {load ? <div className="before">{contextdata.filter(
           (info)=>info.show==="before"
         ).map((elmnt,index)=>{

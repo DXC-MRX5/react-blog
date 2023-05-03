@@ -63,6 +63,17 @@
 .def{
     color: whitesmoke;
 }
+.getbox{
+    position: absolute;
+    top: 50px;
+    right: 20px;
+    padding: 10px;
+    color: green;
+    font-size: 20px;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bold;
+    border: 2px solid green;
+}
 .Home{
     width: 100%;
     display: flex;
@@ -97,8 +108,18 @@
     width: 100%;
     height: 350px;
 }
+.latest-cntnr h1{
+    width: 200px;
+    font-family: 'Ubuntu', sans-serif;
+    color: #05386B;
+    padding-bottom: 20px;
+    border-bottom: 3px solid #05386B;
+    margin-bottom: 30px;
+    margin-left: 20vw;
+}
 .btndiv{
     position: relative;
+    top: 30px;
 }
 .latest-element{
     margin: 20px;
@@ -183,6 +204,7 @@
     box-shadow: 10px 10px 8px rgb(5, 39, 73);
 }
 .slide-cntnr{
+    margin-top: 20px;
     display: flex;
     gap: 2vw;
 }
@@ -261,6 +283,7 @@
 }
 .catagory-heading{
     width: 160px;
+    margin-top: 30px;
     padding-bottom: 15px;
     font-family:  'Ubuntu', sans-serif;
     color: #05386B;
@@ -373,6 +396,17 @@
     .links{
         display: none;
     }
+    .getbox{
+        position: absolute;
+        top: 10px;
+        right: 5px;
+        padding: 5px;
+        color: green;
+        font-size: 10px;
+        font-family: 'Ubuntu', sans-serif;
+        font-weight: bold;
+        border: 2px solid green;
+    }
     .moblinks{
         margin-top: 20px;
         display: flex;
@@ -470,7 +504,7 @@
     }
     .btndiv{
         position: relative;
-        top:450px;
+        top:520px;
     }
     .catagory-poster{
         width: 150px;
